@@ -38,6 +38,7 @@ class _CopyTextWidgetState extends State<CopyTextWidget> {
         });
         try {
           var currentLabels = await detector.detectFromPath(_file?.path);
+
           setState(() {
             _currentLabels = currentLabels;
           });
@@ -56,7 +57,7 @@ class _CopyTextWidgetState extends State<CopyTextWidget> {
       home: Scaffold(
         backgroundColor: ColorShades.backgroundColorPrimary,
         appBar: MyAppBar(
-            text: 'Copy text',
+            text: 'Image scanner',
             onBackTap: () {
               Navigator.pop(context);
             }),
@@ -103,6 +104,10 @@ class _CopyTextWidgetState extends State<CopyTextWidget> {
   }
 
   Widget _buildBody() {
+    var _fullString = '';
+    for (var i = 0; i < _currentLabels.length; i++) {
+      _fullString += _currentLabels[i].text + ' ';
+    }
     return SingleChildScrollView(
       child: Container(
         child: SingleChildScrollView(
@@ -112,12 +117,23 @@ class _CopyTextWidgetState extends State<CopyTextWidget> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: PrimaryButton(
-                    width: 160.0,
                     onPressed: uploadImage,
                     text: 'Upload another',
                   ),
                 ),
               _buildImage(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12.0),
+                child: BlueButton(
+                  text: 'Share consolidated document',
+                  onPressed: () {
+                    final RenderBox box = context.findRenderObject();
+                    Share.share(_fullString,
+                        sharePositionOrigin:
+                            box.localToGlobal(Offset.zero) & box.size);
+                  },
+                ),
+              ),
               _buildList(_currentLabels),
             ],
           ),
@@ -144,7 +160,7 @@ class _CopyTextWidgetState extends State<CopyTextWidget> {
   Widget _buildRow(String text) {
     return ListTile(
       title: Text(
-        "Text: ${text}",
+        "${text}",
         style: TextStyle(
           fontSize: 16.0,
           color: ColorShades.textColorOffWhite,
