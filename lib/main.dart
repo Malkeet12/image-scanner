@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_scanner/copy-text.dart';
 import 'package:image_scanner/shared_widgets/blue_button.dart';
-import 'package:image_scanner/shared_widgets/primary_button.dart';
-import 'package:image_scanner/shared_widgets/secondary_button.dart';
 import 'package:image_scanner/theme/style.dart';
 
 void main() {

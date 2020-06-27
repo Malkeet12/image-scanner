@@ -6,7 +6,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:image_scanner/shared_widgets/blue_button.dart';
 import 'package:image_scanner/shared_widgets/my_app_bar.dart';
 import 'package:image_scanner/shared_widgets/primary_button.dart';
-import 'package:image_scanner/shared_widgets/secondary_button.dart';
 import 'package:image_scanner/theme/style.dart';
 import 'package:mlkit/mlkit.dart';
 import 'package:share/share.dart';
