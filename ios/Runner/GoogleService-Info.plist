@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>434064597516-aa4alqjbij9u76ta4230fs9e40tkb2a8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.434064597516-aa4alqjbij9u76ta4230fs9e40tkb2a8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>434064597516-s8emeo9jve5rb63i8e5mqi5fsrcom8oh.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDzERbAD0MsVKlIPUYD8tJmuLWzeWju81M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>434064597516</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.imageScanner</string>
+	<key>PROJECT_ID</key>
+	<string>copy-text-from-image-72be4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>copy-text-from-image-72be4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:434064597516:ios:60db9745cd79607c58c429</string>
+	<key>DATABASE_URL</key>
+	<string>https://copy-text-from-image-72be4.firebaseio.com</string>
+</dict>
+</plist>
